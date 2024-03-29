@@ -22,4 +22,4 @@ export const modal = createWeb3Modal({
 	enableOnramp: true
 });
 
-await reconnect(config);
+ reconnect(config);
