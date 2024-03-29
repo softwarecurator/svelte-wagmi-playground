@@ -1,4 +1,5 @@
 <script lang="ts">
+	import '../app.css';
 	import { WagmiProvider } from '@byteatatime/wagmi-svelte';
 	import { config } from '$lib/runes/wagmi.svelte';
 
@@ -6,5 +7,7 @@
 </script>
 
 <WagmiProvider {config}>
-	{@render children()}
+	<main class="relative flex h-dvh">
+		{@render children()}
+	</main>
 </WagmiProvider>

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import ConnectButton from '$lib/components/connectButton.svelte';
 	import { createAccount } from '@byteatatime/wagmi-svelte';
 
@@ -7,7 +7,7 @@
 	const address = $derived(account.result.address);
 </script>
 
-<div>
+<div class="text-white">
 	{#if account.result.isConnected}
 		<h1>{address}</h1>
 	{/if}
