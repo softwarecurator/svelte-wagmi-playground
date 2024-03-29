@@ -34,6 +34,7 @@
   "type": "module",
   "dependencies": {
     "@byteatatime/wagmi-svelte": "^0.0.3",
+    "@sveltejs/adapter-vercel": "^5.2.0",
     "@tanstack/svelte-query": "^5.28.9",
     "@wagmi/core": "^2.6.10",
     "@web3modal/wagmi": "^4.1.1",
