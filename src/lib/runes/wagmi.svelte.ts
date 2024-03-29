@@ -15,11 +15,11 @@ export const config = createWagmiConfig({
 	connectors: [emailConnector({ options: { projectId } })]
 });
 
-reconnect(config);
 
 export const modal = createWeb3Modal({
 	wagmiConfig: config,
 	projectId,
-
 	enableOnramp: true
 });
+
+await reconnect(config);
